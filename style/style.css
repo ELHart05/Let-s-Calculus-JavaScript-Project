@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: black 0 2px 3px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: black;
+    transition: 0.8s;
+}
+
+.main:hover {
+    box-shadow: none;
+}
+
+.btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn_container>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+button {
+    background-color: aliceblue;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 2px;
+    border: 1px solid black;
+    box-shadow: black 0 2px 3px 0;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.del {
+    width: 104px;
+}
+
+button:hover {
+    box-shadow: none;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid black;
+    width: 208px;
+    height: 60px;
+    font-size: 20px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: black 0 2px 3px 0;
+    overflow: hidden;
+    background-color: rgb(134, 222, 134);
+}
+
+.hiding {
+    display: none;
+}
+
+i {
+    font-size: 20px;
+    transition: 0.2s;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.fa-moon {
+    margin-left: 3px;
+}
+
+.bodycolorchange {
+    background-color: black;
+}
+
+.maincolorchange {
+    background-color: white;
+    border: transparent;
+    box-shadow: white 0 2px 3px 0;
+}
+
+.buttoncolorchange {
+    color: white;
+    background-color: black;
+}
+
+.del {
+    background-color: red;
+}
+
+.ce {
+    background-color: rgb(33, 33, 226);
+}
+
+.buttoncolorchange:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
