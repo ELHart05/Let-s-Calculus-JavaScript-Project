@@ -10,5 +10,11 @@ NOTE : THE WEBSITE IS HOSTED ON NETLIFY YOU CAN CHECK IT OUT : https://calculuss
 The repository's content, privacy can be changed anytime
 
 All Right Reserved, Release Notes, Details And Functionalities Will Be Deployed Soon.
+<br />
+---
+
+*Updates :*
+- V1.0 : Deploying
+- V1.1 : Adding Some Cases And Conditions (Clicking Zero, Float First | Addition Between Two Float Numbers ...)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/47b789e3-4264-4eaa-a8f7-45925d940fd9/deploy-status)](https://app.netlify.com/sites/calculuss/deploys)
