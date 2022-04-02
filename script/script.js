@@ -69,7 +69,7 @@ zero.onclick = function () {
     MulCpt = 0;
     DivCpt = 0;
     HiderValer += 0;
-    if (input.textContent == 0 && ZeroCpt === 0 && ZeroCpt === 0) {
+    if (input.textContent == 0 && ZeroCpt === 0) {
         input.textContent = 0
     } else {
         input.textContent += 0;
