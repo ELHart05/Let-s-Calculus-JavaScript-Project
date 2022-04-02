@@ -258,6 +258,31 @@ equ.onclick = function () {
     } else {
         input.textContent = eval(HiderValue);
         HiderValue = input.textContent;
+
+        if (HiderValue.includes('.')) {
+            input.textContent = eval(HiderValue).toFixed(8);
+            if (input.textContent.slice(-1) == 0) {
+                input.textContent = eval(HiderValue).toFixed(7);
+                if (input.textContent.slice(-1) == 0) {
+                    input.textContent = eval(HiderValue).toFixed(6);
+                    if (input.textContent.slice(-1) == 0) {
+                        input.textContent = eval(HiderValue).toFixed(5);
+                        if (input.textContent.slice(-1) == 0) {
+                            input.textContent = eval(HiderValue).toFixed(4);
+                            if (input.textContent.slice(-1) == 0) {
+                                input.textContent = eval(HiderValue).toFixed(3);
+                                if (input.textContent.slice(-1) == 0) {
+                                    input.textContent = eval(HiderValue).toFixed(2);
+                                    if (input.textContent.slice(-1) == 0) {
+                                        input.textContent = eval(HiderValue).toFixed(1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
