@@ -23,7 +23,7 @@ const input = document.querySelector(".input");
 const body = document.querySelector("body");
 const main = document.querySelector(".main");
 
-let HiderValer = '';
+let HiderValue = '';
 
 input.textContent = '0';
 
@@ -36,14 +36,14 @@ ZeroCpt = 0;
 
 
 function NoResponse() {
-    HiderValer += '';
+    HiderValue += '';
     input.textContent += '';
 }
 
 del.onclick = function () {
-    HiderValer = HiderValer.slice(0, -1);
-    input.textContent = HiderValer.replace('*', '×').replace('/', '÷');
-    if (HiderValer.length == 0) {
+    HiderValue = HiderValue.slice(0, -1);
+    input.textContent = HiderValue.replace('*', '×').replace('/', '÷');
+    if (HiderValue.length == 0) {
         input.textContent = 0;
     }
     AddCpt = 0;
@@ -53,7 +53,7 @@ del.onclick = function () {
 }
 
 ce.onclick = function () {
-    HiderValer = '';
+    HiderValue = '';
     input.textContent = '0';
     PointCpt = 0;
     AddCpt = 0;
@@ -68,8 +68,8 @@ zero.onclick = function () {
     SubCpt = 0;
     MulCpt = 0;
     DivCpt = 0;
-    HiderValer += 0;
-    if (input.textContent == 0 && ZeroCpt === 0) {
+    HiderValue += 0;
+    if (input.textContent == 0 && ZeroCpt == 0 && PointCpt == 0) {
         input.textContent = 0
     } else {
         input.textContent += 0;
@@ -81,8 +81,8 @@ one.onclick = function () {
     SubCpt = 0;
     MulCpt = 0;
     DivCpt = 0;
-    HiderValer += 1;
-    if (input.textContent == 0 && ZeroCpt === 0) {
+    HiderValue += 1;
+    if (input.textContent == 0 && ZeroCpt == 0 && PointCpt == 0) {
         input.textContent = 1;
     } else {
         input.textContent += 1;
@@ -93,8 +93,8 @@ two.onclick = function () {
     SubCpt = 0;
     MulCpt = 0;
     DivCpt = 0;
-    HiderValer += 2;
-    if (input.textContent == 0 && ZeroCpt === 0) {
+    HiderValue += 2;
+    if (input.textContent == 0 && ZeroCpt == 0 && PointCpt == 0) {
         input.textContent = 2
     } else {
         input.textContent += 2;
@@ -105,8 +105,8 @@ three.onclick = function () {
     SubCpt = 0;
     MulCpt = 0;
     DivCpt = 0;
-    HiderValer += 3;
-    if (input.textContent == 0 && ZeroCpt === 0) {
+    HiderValue += 3;
+    if (input.textContent == 0 && ZeroCpt == 0 && PointCpt == 0) {
         input.textContent = 3
     } else {
         input.textContent += 3;
@@ -117,8 +117,8 @@ four.onclick = function () {
     SubCpt = 0;
     MulCpt = 0;
     DivCpt = 0;
-    HiderValer += 4;
-    if (input.textContent == 0 && ZeroCpt === 0) {
+    HiderValue += 4;
+    if (input.textContent == 0 && ZeroCpt == 0 && PointCpt == 0) {
         input.textContent = 4
     } else {
         input.textContent += 4;
@@ -129,8 +129,8 @@ five.onclick = function () {
     SubCpt = 0;
     MulCpt = 0;
     DivCpt = 0;
-    HiderValer += 5;
-    if (input.textContent == 0 && ZeroCpt === 0) {
+    HiderValue += 5;
+    if (input.textContent == 0 && ZeroCpt == 0 && PointCpt == 0) {
         input.textContent = 5
     } else {
         input.textContent += 5;
@@ -141,8 +141,8 @@ six.onclick = function () {
     SubCpt = 0;
     MulCpt = 0;
     DivCpt = 0;
-    HiderValer += 6;
-    if (input.textContent == 0 && ZeroCpt === 0) {
+    HiderValue += 6;
+    if (input.textContent == 0 && ZeroCpt == 0 && PointCpt == 0) {
         input.textContent = 6
     } else {
         input.textContent += 6;
@@ -153,8 +153,8 @@ seven.onclick = function () {
     SubCpt = 0;
     MulCpt = 0;
     DivCpt = 0;
-    HiderValer += 7;
-    if (input.textContent == 0 && ZeroCpt === 0) {
+    HiderValue += 7;
+    if (input.textContent == 0 && ZeroCpt == 0 && PointCpt == 0) {
         input.textContent = 7
     } else {
         input.textContent += 7;
@@ -165,8 +165,8 @@ eigth.onclick = function () {
     SubCpt = 0;
     MulCpt = 0;
     DivCpt = 0;
-    HiderValer += 8;
-    if (input.textContent == 0 && ZeroCpt === 0) {
+    HiderValue += 8;
+    if (input.textContent == 0 && ZeroCpt == 0 && PointCpt == 0) {
         input.textContent = 8
     } else {
         input.textContent += 8;
@@ -177,8 +177,8 @@ nine.onclick = function () {
     SubCpt = 0;
     MulCpt = 0;
     DivCpt = 0;
-    HiderValer += 9;
-    if (input.textContent == 0 && ZeroCpt === 0) {
+    HiderValue += 9;
+    if (input.textContent == 0 && ZeroCpt == 0 && PointCpt == 0) {
         input.textContent = 9
     } else {
         input.textContent += 9;
@@ -188,14 +188,14 @@ add.onclick = function AddZeroAfterPoint() {
     PointCpt = 0;
     AddCpt += 1;
     if (input.textContent == 0) {
-        HiderValer += '';
+        HiderValue += '';
         input.textContent += '';
     }
     if (AddCpt == 1 && input.textContent != 0) {
-        HiderValer += '+';
+        HiderValue += '+';
         input.textContent += '+';
     } else {
-        HiderValer += '';
+        HiderValue += '';
         input.textContent += '';
     }
 }
@@ -203,67 +203,61 @@ sub.onclick = function () {
     PointCpt = 0;
     SubCpt += 1;
     if (input.textContent == 0) {
-        HiderValer += '';
+        HiderValue += '';
         input.textContent += '';
     }
     if (SubCpt == 1 && input.textContent != 0) {
-        HiderValer += '-';
+        HiderValue += '-';
         input.textContent += '-';
     } else {
-        HiderValer += '';
+        HiderValue += '';
         input.textContent += '';
     }
 }
 div.onclick = function () {
     PointCpt = 0;
     DivCpt += 1;
-    if ((input.textContent == 0) || (HiderValer.slice(-1) == '*')) {
-        HiderValer += '';
+    if ((input.textContent == 0) || (HiderValue.slice(-1) == '*') || (HiderValue.slice(-1) == '+') || (HiderValue.slice(-1) == '-')) {
+        HiderValue += '';
         input.textContent += '';
-    }
-    if (DivCpt == 1 && input.textContent != 0) {
-        HiderValer += '/';
+    } else if (DivCpt == 1 && input.textContent != 0) {
+        HiderValue += '/';
         input.textContent += '÷';
     } else {
-        HiderValer += '';
+        HiderValue += '';
         input.textContent += '';
     }
 }
 mul.onclick = function () {
     PointCpt = 0;
     MulCpt += 1;
-    if (input.textContent == 0) {
-        HiderValer += '';
+    if ((input.textContent == 0) || (HiderValue.slice(-1) == '/') || (HiderValue.slice(-1) == '+') || (HiderValue.slice(-1) == '-')) {
+        HiderValue += '';
         input.textContent += '';
-    }
-    if (MulCpt == 1 && input.textContent != 0) {
-        HiderValer += '*';
+    } else if (MulCpt == 1 && input.textContent != 0) {
+        HiderValue += '*';
         input.textContent += '×';
     } else {
-        HiderValer += '';
+        HiderValue += '';
         input.textContent += '';
     }
 }
 point.onclick = function PointAdder() {
     PointCpt += 1;
-    if (PointCpt == 1 && input.textContent != 0) {
-        HiderValer += '.';
+    if (PointCpt == 1 && ((input.textContent != 0) || (input.textContent != '.'))) {
+        HiderValue += '.';
         input.textContent += '.';
     } else {
-        HiderValer += '';
+        HiderValue += '';
         input.textContent += '';
     }
 }
 equ.onclick = function () {
-    input.textContent = eval(HiderValer);
-    del.onclick = function () {
-        HiderValer = '';
-        input.textContent = '0';
-        PointCpt = 0;
-        AddCpt = 0;
-        SubCpt = 0;
-        MulCpt = 0;
-        DivCpt = 0;
+    if (input.textContent == 0 && ZeroCpt == 0) {
+        input.textContent = 0;
+    } else {
+        input.textContent = eval(HiderValue);
+        HiderValue = input.textContent;
     }
 }
 
