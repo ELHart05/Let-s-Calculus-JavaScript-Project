@@ -16,6 +16,6 @@ All Right Reserved, Release Notes, Details And Functionalities Will Be Deployed 
 *Updates :*
 - V1.0 : Deploying
 - V1.1 : Adding Some Cases And Conditions (Clicking Zero, Float First | Addition Between Two Float Numbers ...)
-- -V1.2 : Other Cases (0. | Float Capacity | Round)
+- V1.2 : Other Cases (0. | Float Capacity | Round)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/47b789e3-4264-4eaa-a8f7-45925d940fd9/deploy-status)](https://app.netlify.com/sites/calculuss/deploys)
