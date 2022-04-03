@@ -45,13 +45,14 @@ del.onclick = function () {
     input.textContent = HiderValue.replace('*', '×').replace('/', '÷');
     if (HiderValue.length == 0) {
         input.textContent = 0;
+    } else if (!(HiderValue.includes('.'))) {
+        PointCpt = 0;
     }
     AddCpt = 0;
     SubCpt = 0;
     MulCpt = 0;
     DivCpt = 0;
 }
-
 ce.onclick = function () {
     HiderValue = '';
     input.textContent = '0';
@@ -244,6 +245,7 @@ mul.onclick = function () {
 }
 point.onclick = function PointAdder() {
     PointCpt += 1;
+    console.log(PointCpt);
     if (PointCpt == 1 && ((input.textContent != 0) || (input.textContent != '.'))) {
         HiderValue += '.';
         input.textContent += '.';
